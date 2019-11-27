@@ -1,0 +1,12 @@
+Input {
+    border:none;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+
+Label {
+    color:rgb(0, 49, 37);
+    font-size: 20px;
+}

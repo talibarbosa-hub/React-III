@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  background-image: url("../src/Imagens/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px;
+}
+
+Button {
+  background-color: #6BB0A0;
+  color: white;
+  padding: 10px;
+  border:none;
+  margin-top:20px;
+  border-radius: 5px;
+ 
+
+}
+
+h1{
+ color: rgb(0, 49, 37);
+}
+
+ul> li{
+  list-style: none;
+}
+
+
