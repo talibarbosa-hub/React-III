@@ -30,8 +30,12 @@ class Home extends React.Component {
     }
      
       
-    removeItem =()=>{
-        console.log(cliquei)
+    removeItem =(clicado)=>{
+        let novoArray = this.state.nomes.filter(item => item !== clicado)
+        this.setState({
+            nomes: novoArray
+        })
+        //console.log("cliquei")
     }
 
     
@@ -52,11 +56,11 @@ render(){
                 click={this.addItem}> Cadastrar
                 </Button>
                 <ul>
-                    {this.state.nomes.map((itemdoArray,indexDoMap) => {
+                    {this.state.nomes.map((itemDoArray,indexDoMap) => {
                     return(
                     <Fragment key={indexDoMap}>
-                    <li>{value}</li>
-                    <Button click={()=>this.removeItem}>x</Button>  
+                    <li>{itemDoArray}</li>
+                    <Button click={()=>this.removeItem(itemDoArray)}>x</Button>  
                     </Fragment>
                     )})}
                 </ul>
